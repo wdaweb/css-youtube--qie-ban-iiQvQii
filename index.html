@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube切版練習</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<!-- 待完成：left切換時iframe(right區塊)換內容 -->
+<!-- 選擇left menu時 會顯示在哪一個label -->
+
+<body>
+  <div id="container">
+    <div id="top">
+      <div id="top-left">
+        <div id="bar" class="i-b">
+          <i class="fa-solid fa-bars fa-lg white"></i>
+        </div>
+        <div id="logo" class="i-b">
+          <a href="./index.html">
+            <img src="./images/logo.svg" alt="logo">
+          </a>
+        </div>
+      </div>
+
+      <div id="top-center">
+        <div id="search">
+          <input type="text" placeholder="搜尋">
+        </div>
+
+        <button id="searchBtn"><i class="fa-solid fa-magnifying-glass fa-xl white"></i></button>
+        <div class="i-b icon radius" id="mic"><i class="fa-solid fa-microphone white"></i></div>
+      </div>
+
+      <div id="top-right">
+        <div class="i-b icon"><a href="#"><i class="fa-regular fa-square-plus white fa-xl"></i></a></div>
+        <div class="i-b icon"><a href="#"><i class="fa-solid fa-ellipsis-vertical white fa-lg"></i></a></div>
+        <div id="login" class="i-b">
+          <a href="#"><i class="fa-regular fa-circle-user fa-xl"></i> 登入</a>
+        </div>
+      </div>
+    </div>
+
+
+    <!---------------- left ------------------>
+    <div id="left">
+      <div id="left1">
+        <ul>
+          <li><a href="#" class="menu-item"><i class="fa-solid fa-house fa-lg icon-margin"></i>首頁</a></li>
+          <li><a href="#" class="menu-item"><i class="fa-regular fa-compass fa-lg icon-margin"></i>探索</a></li>
+          <li><a href="#" class="menu-item"><i class="fa-brands fa-bilibili fa-lg icon-margin"></i>Shorts</a></li>
+          <li><a href="#" class="menu-item"><i class="fa-solid fa-circle-play fa-lg icon-margin"></i>訂閱內容</a></li>
+        </ul>
+      </div>
+      <div id="left2">
+        <ul>
+          <li><a href="#" class="menu-item"><i class="fa-solid fa-house fa-lg icon-margin"></i>媒體庫</a></li>
+          <li><a href="#" class="menu-item"><i class="fa-solid fa-clock-rotate-left fa-lg icon-margin"></i>觀看紀錄</a></li>
+        </ul>
+      </div>
+      <div id="left3">
+        <ul>
+          <li>
+            <div class="text-item">
+              登入帳戶即可對影片表示喜歡、發布留言及訂閱頻道。
+              <br>
+              <br>
+              <div class="i-b" id="login">
+                <a href="#"><i class="fa-regular fa-circle-user fa-xl"></i> 登入</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div id="left4">
+        <ul>
+          <li class="title-item">YOUTUBE 精選</li>
+          <li><a href="#" class="menu-item"><i class="fa-solid fa-music fa-lg icon-margin"></i>音樂</a></li>
+          <li><a href="#" class="menu-item"><i class="fa-solid fa-trophy fa-lg icon-margin"></i>體育</a></li>
+          <li><a href="#" class="menu-item"><i class="fa-solid fa-gamepad fa-lg icon-margin"></i>遊戲</a></li>
+          <li><a href="#" class="menu-item"><i class="fa-solid fa-film fa-lg icon-margin"></i>電影</a></li>
+          <li><a href="#" class="menu-item"><i class="fa-regular fa-newspaper fa-lg icon-margin"></i>新聞</a></li>
+          <li><a href="#" class="menu-item"><i class="fa-solid fa-rss fa-lg icon-margin"></i>直播</a></li>
+          <li><a href="#" class="menu-item"><i class="fa-solid fa-video fa-lg icon-margin"></i>360度影片</a></li>
+        </ul>
+      </div>
+      <div id="left5">
+        <ul>
+          <li><a href="#" class="menu-item"><i class="fa-regular fa-compass fa-lg icon-margin"></i>瀏覽頻道</a></li>
+        </ul>
+      </div>
+      <div id="left6">
+        <ul>
+          <li class="title-item">更多 YOUTUBE 功能</li>
+          <li><a href="#" class="menu-item"><i class="fa-brands fa-youtube fa-lg icon-margin"></i>YouTube Premium</a>
+          </li>
+          <li><a href="#" class="menu-item"><i class="fa-solid fa-tower-broadcast fa-lg icon-margin"></i>直播</a></li>
+        </ul>
+      </div>
+      <div id="left7">
+        <ul>
+          <li><a href="#" class="menu-item"><i class="fa-solid fa-gear fa-lg icon-margin"></i>設定</a></li>
+          <li><a href="#" class="menu-item"><i class="fa-regular fa-flag fa-lg icon-margin"></i>檢舉紀錄</a></li>
+          <li><a href="#" class="menu-item"><i class="fa-regular fa-circle-question fa-lg icon-margin"></i>說明</a></li>
+          <li><a href="#" class="menu-item"><i class="fa-solid fa-circle-info fa-lg icon-margin"></i>提供意見</a></li>
+        </ul>
+      </div>
+      <div id="left8">
+        <a href="#">簡介</a>
+        <a href="#">媒體版權</a>
+        <a href="#">與我們聯絡</a>
+        <a href="#">創作者</a>
+        <a href="#">廣告</a>
+        <a href="#">開發人員</a>
+        <br>
+        <br>
+        <a href="#">條款</a>
+        <a href="#">隱私權</a>
+        <a href="#">政策與安全性</a>
+        <a href="#">YouTube 運作方式</a>
+        <a href="#">測試新功能</a>
+        <br>
+        <br>
+        <span>© 2022 Google LLC</span>
+      </div>
+    </div>
+
+    <!---------------- right --------------------->
+    <div id="right">
+      <!-- 要fixed -->
+      <div id="category">
+        <div id="sorts">
+          <ul>
+            <li>
+              <label for="tab1" id="label1">
+                全部
+              </label><input type="radio" name="sort" id="tab1" checked>
+            </li>
+            <li><label for="tab2" id="label2">
+                音樂
+              </label><input type="radio" name="sort" id="tab2"></li>
+            <li><label for="tab3" id="label3">
+                直播
+              </label><input type="radio" name="sort" id="tab3"></li>
+            <li><label for="tab4" id="label4">
+                動畫
+              </label><input type="radio" name="sort" id="tab4"></li>
+            <li><label for="tab5" id="label5">
+                觀光
+              </label><input type="radio" name="sort" id="tab5"></li>
+            <li><label for="tab6" id="label6">
+                遊戲
+              </label><input type="radio" name="sort" id="tab6"></li>
+            <li><label for="tab7" id="label7">
+                寵物
+              </label><input type="radio" name="sort" id="tab7"></li>
+            <li><label for="tab8" id="label8">
+                籃球
+              </label><input type="radio" name="sort" id="tab8"></li>
+            <li><label for="tab9" id="label9">
+                烹飪
+              </label><input type="radio" name="sort" id="tab9"></li>
+            <li>
+              <label for="tab10" id="label10">
+                最新上傳
+              </label>
+              <input type="radio" name="sort" id="tab10">
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="content">
+        <!-- 橫列 -->
+        <div id="row">
+          <!-- 限寬 -->
+          <div id="content-area">
+            <!-- 直欄 -->
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/8dJyRm2jJ-U/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCWH-sW5fLjzvBsj1NvgMLcVzanMg"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/VXVR9IKCRGRAtjdXcul8EcB2MoT1ZC7d8YMlkzVfB8Iuulf3WK5HA_h6BihPBe-OnpS4Fufrag=s88-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">PSY - 'That That (prod. & feat. SUGA of BTS)' MV</a></div>
+                  <div id="film-creator"><a href="#">officialpsy</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：4000萬次</span>
+                    <span>3天前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/8dJyRm2jJ-U/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCWH-sW5fLjzvBsj1NvgMLcVzanMg"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/VXVR9IKCRGRAtjdXcul8EcB2MoT1ZC7d8YMlkzVfB8Iuulf3WK5HA_h6BihPBe-OnpS4Fufrag=s88-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">PSY - 'That That (prod. & feat. SUGA of BTS)' MV</a></div>
+                  <div id="film-creator"><a href="#">officialpsy</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：4000萬次</span>
+                    <span>3天前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/8dJyRm2jJ-U/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCWH-sW5fLjzvBsj1NvgMLcVzanMg"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/VXVR9IKCRGRAtjdXcul8EcB2MoT1ZC7d8YMlkzVfB8Iuulf3WK5HA_h6BihPBe-OnpS4Fufrag=s88-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">PSY - 'That That (prod. & feat. SUGA of BTS)' MV</a></div>
+                  <div id="film-creator"><a href="#">officialpsy</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：4000萬次</span>
+                    <span>3天前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/8dJyRm2jJ-U/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCWH-sW5fLjzvBsj1NvgMLcVzanMg"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/VXVR9IKCRGRAtjdXcul8EcB2MoT1ZC7d8YMlkzVfB8Iuulf3WK5HA_h6BihPBe-OnpS4Fufrag=s88-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">PSY - 'That That (prod. & feat. SUGA of BTS)' MV</a></div>
+                  <div id="film-creator"><a href="#">officialpsy</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：4000萬次</span>
+                    <span>3天前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div id="row">
+          <!-- 限寬 -->
+          <div id="content-area">
+            <!-- 直欄 -->
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/8dJyRm2jJ-U/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCWH-sW5fLjzvBsj1NvgMLcVzanMg"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/VXVR9IKCRGRAtjdXcul8EcB2MoT1ZC7d8YMlkzVfB8Iuulf3WK5HA_h6BihPBe-OnpS4Fufrag=s88-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">PSY - 'That That (prod. & feat. SUGA of BTS)' MV</a></div>
+                  <div id="film-creator"><a href="#">officialpsy</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：4000萬次</span>
+                    <span>3天前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/8dJyRm2jJ-U/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCWH-sW5fLjzvBsj1NvgMLcVzanMg"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/VXVR9IKCRGRAtjdXcul8EcB2MoT1ZC7d8YMlkzVfB8Iuulf3WK5HA_h6BihPBe-OnpS4Fufrag=s88-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">PSY - 'That That (prod. & feat. SUGA of BTS)' MV</a></div>
+                  <div id="film-creator"><a href="#">officialpsy</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：4000萬次</span>
+                    <span>3天前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/8dJyRm2jJ-U/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCWH-sW5fLjzvBsj1NvgMLcVzanMg"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/VXVR9IKCRGRAtjdXcul8EcB2MoT1ZC7d8YMlkzVfB8Iuulf3WK5HA_h6BihPBe-OnpS4Fufrag=s88-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">PSY - 'That That (prod. & feat. SUGA of BTS)' MV</a></div>
+                  <div id="film-creator"><a href="#">officialpsy</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：4000萬次</span>
+                    <span>3天前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/8dJyRm2jJ-U/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCWH-sW5fLjzvBsj1NvgMLcVzanMg"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/VXVR9IKCRGRAtjdXcul8EcB2MoT1ZC7d8YMlkzVfB8Iuulf3WK5HA_h6BihPBe-OnpS4Fufrag=s88-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">PSY - 'That That (prod. & feat. SUGA of BTS)' MV</a></div>
+                  <div id="film-creator"><a href="#">officialpsy</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：4000萬次</span>
+                    <span>3天前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div id="divide">發燒影片</div>
+        <div id="row">
+          <!-- 限寬 -->
+          <div id="content-area">
+            <!-- 直欄 -->
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/8dJyRm2jJ-U/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCWH-sW5fLjzvBsj1NvgMLcVzanMg"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/VXVR9IKCRGRAtjdXcul8EcB2MoT1ZC7d8YMlkzVfB8Iuulf3WK5HA_h6BihPBe-OnpS4Fufrag=s88-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">PSY - 'That That (prod. & feat. SUGA of BTS)' MV</a></div>
+                  <div id="film-creator"><a href="#">officialpsy</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：4000萬次</span>
+                    <span>3天前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/8dJyRm2jJ-U/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCWH-sW5fLjzvBsj1NvgMLcVzanMg"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/VXVR9IKCRGRAtjdXcul8EcB2MoT1ZC7d8YMlkzVfB8Iuulf3WK5HA_h6BihPBe-OnpS4Fufrag=s88-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">PSY - 'That That (prod. & feat. SUGA of BTS)' MV</a></div>
+                  <div id="film-creator"><a href="#">officialpsy</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：4000萬次</span>
+                    <span>3天前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/8dJyRm2jJ-U/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCWH-sW5fLjzvBsj1NvgMLcVzanMg"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/VXVR9IKCRGRAtjdXcul8EcB2MoT1ZC7d8YMlkzVfB8Iuulf3WK5HA_h6BihPBe-OnpS4Fufrag=s88-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">PSY - 'That That (prod. & feat. SUGA of BTS)' MV</a></div>
+                  <div id="film-creator"><a href="#">officialpsy</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：4000萬次</span>
+                    <span>3天前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/8dJyRm2jJ-U/hqdefault.jpg?sqp=-oaymwEcCOADEI4CSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCWH-sW5fLjzvBsj1NvgMLcVzanMg"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/VXVR9IKCRGRAtjdXcul8EcB2MoT1ZC7d8YMlkzVfB8Iuulf3WK5HA_h6BihPBe-OnpS4Fufrag=s88-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">PSY - 'That That (prod. & feat. SUGA of BTS)' MV</a></div>
+                  <div id="film-creator"><a href="#">officialpsy</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：4000萬次</span>
+                    <span>3天前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <!-- 橫列 -->
+        <div id="row">
+          <!-- 限寬 -->
+          <div id="content-area">
+            <!-- 直欄 -->
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/PlCbgZxonJs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBlfUObDh1cjoFDvqYJaX5ezYneVA"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/ytc/AKedOLTVxicmuOPghY06-FDN6mGHfb-nvnwu9pLznFqgQA=s48-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">告五人 Accusefive [ 在這座城市遺失了你 Where I Lost Us ] Official Music...</a>
+                  </div>
+                  <div id="film-creator"><a href="#">相信音樂BinMusic</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：1700萬次</span>
+                    <span>1年前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/PlCbgZxonJs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBlfUObDh1cjoFDvqYJaX5ezYneVA"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/ytc/AKedOLTVxicmuOPghY06-FDN6mGHfb-nvnwu9pLznFqgQA=s48-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">告五人 Accusefive [ 在這座城市遺失了你 Where I Lost Us ] Official Music...</a>
+                  </div>
+                  <div id="film-creator"><a href="#">相信音樂BinMusic</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：1700萬次</span>
+                    <span>1年前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/PlCbgZxonJs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBlfUObDh1cjoFDvqYJaX5ezYneVA"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/ytc/AKedOLTVxicmuOPghY06-FDN6mGHfb-nvnwu9pLznFqgQA=s48-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">告五人 Accusefive [ 在這座城市遺失了你 Where I Lost Us ] Official Music...</a>
+                  </div>
+                  <div id="film-creator"><a href="#">相信音樂BinMusic</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：1700萬次</span>
+                    <span>1年前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/PlCbgZxonJs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBlfUObDh1cjoFDvqYJaX5ezYneVA"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/ytc/AKedOLTVxicmuOPghY06-FDN6mGHfb-nvnwu9pLznFqgQA=s48-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">告五人 Accusefive [ 在這座城市遺失了你 Where I Lost Us ] Official Music...</a>
+                  </div>
+                  <div id="film-creator"><a href="#">相信音樂BinMusic</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：1700萬次</span>
+                    <span>1年前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div id="row">
+          <!-- 限寬 -->
+          <div id="content-area">
+            <!-- 直欄 -->
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/PlCbgZxonJs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBlfUObDh1cjoFDvqYJaX5ezYneVA"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/ytc/AKedOLTVxicmuOPghY06-FDN6mGHfb-nvnwu9pLznFqgQA=s48-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">告五人 Accusefive [ 在這座城市遺失了你 Where I Lost Us ] Official Music...</a>
+                  </div>
+                  <div id="film-creator"><a href="#">相信音樂BinMusic</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：1700萬次</span>
+                    <span>1年前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/PlCbgZxonJs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBlfUObDh1cjoFDvqYJaX5ezYneVA"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/ytc/AKedOLTVxicmuOPghY06-FDN6mGHfb-nvnwu9pLznFqgQA=s48-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">告五人 Accusefive [ 在這座城市遺失了你 Where I Lost Us ] Official Music...</a>
+                  </div>
+                  <div id="film-creator"><a href="#">相信音樂BinMusic</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：1700萬次</span>
+                    <span>1年前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/PlCbgZxonJs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBlfUObDh1cjoFDvqYJaX5ezYneVA"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/ytc/AKedOLTVxicmuOPghY06-FDN6mGHfb-nvnwu9pLznFqgQA=s48-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">告五人 Accusefive [ 在這座城市遺失了你 Where I Lost Us ] Official Music...</a>
+                  </div>
+                  <div id="film-creator"><a href="#">相信音樂BinMusic</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：1700萬次</span>
+                    <span>1年前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/PlCbgZxonJs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBlfUObDh1cjoFDvqYJaX5ezYneVA"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/ytc/AKedOLTVxicmuOPghY06-FDN6mGHfb-nvnwu9pLznFqgQA=s48-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">告五人 Accusefive [ 在這座城市遺失了你 Where I Lost Us ] Official Music...</a>
+                  </div>
+                  <div id="film-creator"><a href="#">相信音樂BinMusic</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：1700萬次</span>
+                    <span>1年前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div id="divide">發燒影片</div>
+        <div id="row">
+          <!-- 限寬 -->
+          <div id="content-area">
+            <!-- 直欄 -->
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/PlCbgZxonJs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBlfUObDh1cjoFDvqYJaX5ezYneVA"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/ytc/AKedOLTVxicmuOPghY06-FDN6mGHfb-nvnwu9pLznFqgQA=s48-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">告五人 Accusefive [ 在這座城市遺失了你 Where I Lost Us ] Official Music...</a>
+                  </div>
+                  <div id="film-creator"><a href="#">相信音樂BinMusic</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：1700萬次</span>
+                    <span>1年前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/PlCbgZxonJs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBlfUObDh1cjoFDvqYJaX5ezYneVA"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/ytc/AKedOLTVxicmuOPghY06-FDN6mGHfb-nvnwu9pLznFqgQA=s48-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">告五人 Accusefive [ 在這座城市遺失了你 Where I Lost Us ] Official Music...</a>
+                  </div>
+                  <div id="film-creator"><a href="#">相信音樂BinMusic</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：1700萬次</span>
+                    <span>1年前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/PlCbgZxonJs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBlfUObDh1cjoFDvqYJaX5ezYneVA"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/ytc/AKedOLTVxicmuOPghY06-FDN6mGHfb-nvnwu9pLznFqgQA=s48-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">告五人 Accusefive [ 在這座城市遺失了你 Where I Lost Us ] Official Music...</a>
+                  </div>
+                  <div id="film-creator"><a href="#">相信音樂BinMusic</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：1700萬次</span>
+                    <span>1年前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="col" onclick="location.href='https://www.google.com'">
+              <div id="film-pic">
+                <a href="#"><img
+                    src="https://i.ytimg.com/vi/PlCbgZxonJs/hq720.jpg?sqp=-oaymwEcCNAFEJQDSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLBlfUObDh1cjoFDvqYJaX5ezYneVA"></a>
+              </div>
+              <div id="film-text">
+                <div id="creator-pic"><a href="#"><img
+                      src="https://yt3.ggpht.com/ytc/AKedOLTVxicmuOPghY06-FDN6mGHfb-nvnwu9pLznFqgQA=s48-c-k-c0x00ffffff-no-rj"></a>
+                </div>
+                <div id="info">
+                  <div id="film-title"><a href="#">告五人 Accusefive [ 在這座城市遺失了你 Where I Lost Us ] Official Music...</a>
+                  </div>
+                  <div id="film-creator"><a href="#">相信音樂BinMusic</a>
+                  </div>
+                  <div id="film-info">
+                    <span>觀看次數：1700萬次</span>
+                    <span>1年前</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <script>
+    // 切換標籤顯示內容
+    $('#sorts label').each(function (i) {
+      $(this).click(function () {
+        if (i % 2 === 0) {
+          $('.content').hide()
+          $('.content').eq(0).show()
+        } else {
+          $('.content').hide()
+          $('.content').eq(1).show()
+        }
+      })
+    })
+
+    // 預設 ’全部‘ 被選取
+    if ($("#sorts #tab1").is(':checked')) {
+      $('#sorts #label1').css({ background: '#fff', color: '#212121' })
+    }
+
+    // 切換標籤更換樣式
+    $('#sorts label').each(function () {
+      $(this).click(function () {
+        $('#sorts label').css({ background: 'rgba(255, 255, 255, 0.1)', color: '#fff' })
+        $(this).css({ background: '#fff', color: '#212121' })
+      })
+    })
+
+  </script>
+</body>
+
+</html>

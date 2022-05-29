@@ -1,0 +1,427 @@
+:root {
+  --primary: #212121;
+  --secondary: #181818;
+}
+
+html,
+body {
+  width: 100%;
+  padding: 0;
+  font-family: "Roboto", "Arial", "sans-serif";
+  background: #212121;
+}
+
+body {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: var(--primary);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: hsla(0, 0%, 53.3%, 0.4);
+}
+
+
+#container {
+  width: 100%;
+  height: 100vh;
+  /* background: pink; */
+
+}
+
+
+/* --------------------- 上 -------------------------- */
+#top {
+  width: 100%;
+  height: 65px;
+  background: var(--primary);
+  position: fixed;
+}
+
+#top-left {
+  width: 16%;
+  height: 65px;
+  position: absolute;
+  left: 0;
+  line-height: 65px;
+}
+
+#top #bar {
+  width: 60px;
+  height: 65px;
+  float: left;
+  text-align: center;
+  padding-left: 10px;
+}
+
+#top #logo {
+  width: 120px;
+  height: 65px;
+}
+
+#top #logo a {
+  display: block;
+  /* text-align: center; */
+}
+
+#top #logo img {
+  width: 100px;
+  vertical-align: middle;
+}
+
+#top-center {
+  width: 730px;
+  height: 40px;
+  margin: auto;
+  line-height: 40px;
+  font-size: 0;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#search {
+  display: inline-block;
+}
+
+#top-center input {
+  width: 525px;
+  background: var(--secondary);
+  /* padding-left: 30px; */
+  border: 1px solid rgb(55, 55, 55);
+  padding: 10px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+/* 選取時外框改變 */
+input[type=text]:focus {
+  border: 1px solid #3ea6ff;
+}
+
+#searchBtn {
+  width: 64px;
+  height: 40px;
+  background: hsla(0, 0%, 100%, 0.08);
+  border: none;
+  cursor: pointer;
+}
+
+#top-center div:last-child {
+  font-size: 20px;
+  margin-left: 10px;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+
+#top-right {
+  background: var(--primary);
+  width: 16%;
+  height: 65px;
+  position: absolute;
+  right: 0;
+  line-height: 65px;
+  text-align: right;
+  padding-right: 10px;
+}
+
+#login {
+  width: 85px;
+  height: 40px;
+  border: 1px solid #3ea6ff;
+  text-align: center;
+  line-height: 40px;
+  color: #3ea6ff;
+}
+
+#login a {
+  display: block;
+  text-decoration: none;
+  color: #3ea6ff;
+}
+
+
+/* ------------------------左------------------------- */
+#left {
+  width: 16%;
+  height: calc(100vh - 65px);
+  background: var(--primary);
+  float: left;
+  overflow: scroll;
+  overflow-x: hidden;
+  margin-top: 65px;
+  font-size: 14px;
+  color: white;
+  position: fixed;
+}
+
+#left a:hover {
+  background: hsla(0, 0%, 53.3%, 0.4);
+}
+
+#left .menu-item {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 15px 30px;
+}
+
+#left3 .text-item {
+  padding: 15px 30px;
+}
+
+.title-item {
+  color: #aaa;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 15px 30px;
+}
+
+#left8 {
+  padding: 25px 30px;
+  color: rgb(113, 113, 113);
+  font-size: 12px;
+}
+
+#left8 a {
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 500;
+  font-size: 13px;
+  margin-right: 8px;
+}
+
+/* 上下內距 */
+#left1,
+#left2,
+#left4,
+#left5,
+#left6,
+#left7 {
+  padding: 10px 0;
+}
+
+#left2,
+#left3,
+#left4,
+#left5,
+#left6,
+#left7,
+#left8 {
+  border-top: 1px solid hsla(0, 0%, 53.3%, 0.4);
+}
+
+
+/* -------------------------右------------------------------- */
+#right {
+  width: calc(100% - 16%);
+  /* height: calc(100vh - 65px); */
+  background: var(--primary);
+  float: right;
+  margin-top: 65px;
+}
+
+#right #category {
+  background: var(--primary);
+  width: calc(100% - 16%);
+  height: 56px;
+  border-top: 1px solid hsla(0, 0%, 53.3%, 0.4);
+  border-bottom: 1px solid hsla(0, 0%, 53.3%, 0.4);
+  position: fixed;
+}
+
+#right #sorts {
+  width: 800px;
+  height: 56px;
+  /* background: #000; */
+  text-align: center;
+  margin: auto;
+}
+
+#sorts li {
+  display: inline-block;
+}
+
+/* #sorts .button {
+  height: 30px;
+  min-width: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 3px 14px;
+  line-height: 30px;
+  border-radius: 30px;
+} */
+
+#sorts label {
+  display: block;
+  height: 30px;
+  text-decoration: none;
+  margin: 12px 3px;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  padding: 3px 14px;
+  background: rgba(255, 255, 255, 0.1);
+  line-height: 30px;
+  border-radius: 30px;
+}
+
+#sorts label:hover {
+  background: rgba(255, 255, 255, .2);
+  cursor: pointer;
+}
+
+#sorts input {
+  display: none;
+}
+
+/* ------- 影片區 ---------- */
+
+.content {
+  margin-top: 80px;
+}
+
+.content:last-child {
+  display: none;
+}
+
+#row {
+  height: 343px;
+  background: var(--primary);
+}
+
+/* 限寬區 */
+#content-area {
+  width: 1516px;
+  height: 343px;
+  margin: auto;
+  /* border: 1px solid #f00; */
+  text-align: center;
+}
+
+#col {
+  width: 360px;
+  height: 303px;
+  /* background: #000; */
+  margin: 0 8px 40px 8px;
+  text-align: center;
+  display: inline-block;
+}
+
+#col:hover {
+  cursor: pointer;
+}
+
+#divide {
+  width: 1500px;
+  height: 28px;
+  border-top: 4px solid rgba(255, 255, 255, 0.1);
+  margin: auto;
+  padding: 24px 0 24px 8px;
+  font-size: 20px;
+  color: #fff;
+}
+
+#film-pic img {
+  width: 360px;
+  height: 202px;
+}
+
+/* 影片資訊區 */
+#film-text {
+  text-align: left;
+  margin-top: 12px;
+}
+
+/* 作者頭貼 */
+#creator-pic {
+  width: 48px;
+  height: 100px;
+  float: left;
+}
+
+#creator-pic img {
+  width: 36px;
+  height: 36px;
+  border-radius: 20px;
+}
+
+/* 影片文字區 */
+#info {
+  width: 312px;
+  height: 100px;
+  display: inline-block;
+}
+
+/* 影片標題 */
+#film-title {
+  width: 287px;
+  display: inline-block;
+}
+
+/* #film-title, */
+#film-creator,
+#film-info {
+  margin: 2px 0;
+}
+
+#film-title a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 18px;
+}
+
+#film-creator a,
+#film-info span {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 14px;
+  text-align: left;
+}
+
+#film-info span:first-child::after {
+  content: '•';
+  margin: 0 4px;
+}
+
+
+/* ----------- fontawesome icon白色class ------------------- */
+
+.white {
+  color: white;
+}
+
+/* -------------------------- div inline-block ----------------------------- */
+
+.i-b {
+  display: inline-block;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+}
+
+.radius {
+  border-radius: 50%;
+  background: #000;
+}
+
+.icon-margin {
+  margin-right: 24px;
+}
